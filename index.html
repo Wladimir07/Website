@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Web stranica profesora Vladimira Vukobrata</title>		<!-- Naslov Web stranice -->
+
+<base href="" >		<!-- Osnovna adresa za sve linkove na Web stranici -->
+
+<link rel="stylesheet" type="text/css" href="stil.css">		<!-- External CSS-Veza do stranice sa stilom za ceo Web sajt -->
+
+<style type="text/css">		/* Internal CSS-Stil HTML dokumenta */
+
+@font-face
+{
+font-family:Graffiti letters;
+src: url(graffiti2.ttf);
+}
+
+#panel
+{
+font-family:Graffiti letters;
+}
+
+body {background-image:url('pozadina.jpg');
+background-color:grey; 
+}
+h1 {color:black;}
+p {color:black;}
+
+#panel,#flip
+{
+padding:5px;
+text-align:center;
+background-image:url("zavesa.jpg");
+border:solid 1px #c3c3c3;
+}
+#panel
+{
+padding:150px;
+display:none;
+font-size:50px;
+}
+</style>
+
+<meta name="description" content="Web stranica namenjena svim učesnicima nastave matematike profesora Vladimira Vukobrata">		<!-- Opis Web stranice -->
+<meta name="keywords" content="matematika, škola, nastava, profesor">		<!-- Ključne reči za pretraživace -->
+<meta name="author" content="Vladimir Vukobrat"> 	<!-- Autor web stranice -->
+<meta charset="UTF-8">		<!-- Specifikacija Kodiranja karaktera za Unicode -->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+</script>
+
+<script>		 <!-- JavaScript -->
+function displayDate()
+{
+document.getElementById("demo").innerHTML=Date();
+}
+</script>		
+
+<noscript> Izvini, tvoj brauzer ne podržava JavaScript! </noscript>		<!-- Tekst za brauzere koji ne podržavaju JavaScript -->
+
+</head>
+
+<body>
+
+<ul>
+<li><a class="navigacija" href="index.html"> Početak </a> </li>
+<li><a class="navigacija" href="Izreke.html"> Izreke </a> </li>
+<li><a class="navigacija" href="Učionica.html"> Učionica </a> </li>
+<li><a class="navigacija" href="O meni.html"> O meni </a> </li>
+<li><a class="navigacija" href="Kontakt.html"> Kontakt </a> 
+</li>
+</ul>
+
+
+<h1 align=center  style= "font-family:Graffiti letters; color:white;font-size:100px">Pozdrav djaci !</h1>
+
+
+<div id="flip" style="color:white">Klikni da pročitaš poruku</div>
+<div id="panel" style="color:white"><b>Nismo uspeli da resimo sve probleme. Odgovori do kojih smo dosli samo su otvorili gomilu novih pitanja. Na neki nacin osecamo da smo zbunjeni kao sto smo i bili, ali verujemo da smo zbunjeni na jednom visem nivou i o znacajnijim stvarima!</b></div>
+
+
+<p id="demo">Tačno vreme i datum</p>
+
+
+<button type="button" onclick="displayDate()">Prikaži vreme</button>
+
+<p align=right>
+<audio controls>
+  <source src="MarÄelo - Testament (Lyrics).mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+<p align=center>
+Copyright &copy; 2013. Vladimir Vukobrat <BR>
+Izmenjeno--18.07.2013. <BR>
+URL: <a href="file:///D:/Vlada/Web Programiranje/FINAL/web sajt.html"> file:///D:/Vlada/Web Programiranje/FINAL/Početak.html </a>
+
+
+</body>
+
+</html>

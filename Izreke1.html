@@ -1,0 +1,331 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title></title>
+
+<meta charset="UTF-8">		<!-- Specifikacija Kodiranja karaktera za Unicode -->
+
+<link rel="stylesheet" type="text/css" href="stil.css">
+
+<style>
+body
+{
+background-color:#d0e4fe;
+}
+h1
+{
+color:orange;
+text-align:center;
+}
+p
+{
+font-family:"Times New Roman";
+font-size:20px;
+}
+</style>
+
+</head>
+
+<ul>
+<li><a class="navigacija" href="Početak.html"> Početak </a> </li>
+<li><a class="navigacija" href="Izreke.html"> Izreke </a> </li>
+<li><a class="navigacija" href="Učionica.html"> Učionica </a> </li>
+<li><a class="navigacija" href="O meni.html"> O meni </a> </li>
+<li><a class="navigacija" href="Kontakt.html"> Kontakt </a> 
+</li>
+</ul>
+
+</body>
+
+<p id="1" style="text-align:center;"></p>
+<p id="2" style="text-align:left;"></p>
+<p id="3" style="text-align:right;"></p>
+
+<script>
+
+izreke=["Ab Iove principium. - Почетак је од Јупитера (тј. почнимо од најважнијег).", 
+"A bove maiori discit arare minor. - Од старијег вола млађи се уче да ору.", "
+"Ab homine homini cotidianum periculum. - Од човека човеку прети сваки дан опасност. (Сенека)", 
+"Accipere quam facere praestat iniuriam. - Боље је неправду трпети него наносити. (Цицерон)",
+"Acta est fabula. - Представа је завршена. (Октавијан Август)", 
+"Acta does numquam mortalia fallunt - Људска дела никад не остају боговима скривена (Овидије)", 
+"Ad litteram. - Дословно.", 
+"Alea iacta est! - Коцка је бачена. (Гај Јулије Цезар)", 
+"Alteri semper ignoscito, tibi nunquam. - Другоме увек праштај, себи никада. (Сенека) ", 
+"Amor omnia vincit. - Љубав све побеђује." ];
+
+text = "";
+for (var i = 0; i < izreke.length; i++) {
+    text += izreke[i] + "<br>";
+    var x=Math.floor(Math.random()*11)%3;
+    if (x==0) {
+       document.getElementById("1").innerHTML=text; 
+    } else if (x==1) {
+       document.getElementById("2").innerHTML=text;
+    } else {
+       document.getElementById("3").innerHTML=text;
+    }
+}
+
+</script>
+
+<script>
+document.write("<p style="color:blue;margin-left:20px;"> •A bove maiori discit arare minor. - Од старијег вола млађи се уче да ору. </p>");
+</script>
+
+
+<p>
+<p style="text-align:center;">•	A bove maiori discit arare minor. - Од старијег вола млађи се уче да ору. </p>
+<p>•	Ab Iove principium. - Почетак је од Јупитера (тј. почнимо од најважнијег). </p>
+<p>•	Ab homine homini cotidianum periculum. - Од човека човеку прети сваки дан опасност. (Сенека) </p>
+<p>•	Accipere quam facere praestat iniuriam. - Боље је неправду трпети него наносити. (Цицерон) </p>
+<p>•	Acta does numquam mortalia fallunt - Људска дела никад не остају боговима скривена (Овидије) </p>
+<p>•	Acta est fabula. - Представа је завршена. (Октавијан Август) </p>
+<p>•	Ad litteram. - Дословно. </p>
+<p>•	Alea iacta est! - Коцка је бачена. (Гај Јулије Цезар) </p>
+<p>•	Alteri semper ignoscito, tibi nunquam. - Другоме увек праштај, себи никада. (Сенека) </p>
+<p>•	Amor omnia vincit. - Љубав све побеђује.
+<p>•	Amicus certus in re incerta cernitur. - Прави пријатељ се у невољи познаје.
+<p>•	Amicus Plato, sed magis amica veritas. - Драг ми је Платон, али ми је истина дража. (Аристотел) </p>
+<p>•	Anima candida. - Честита душа. </p>
+<p>•	Anquilla non capit muscas. - Орао не хвата муве (тј. велики човек се не бави малим стварима). </p>
+<p>•	Ardua prima via est. - Тежак је први пут (тј. сваки почетак је тежак). </p>
+<p>•	Arbiter elegantiae. - Судија отмености. </p>
+•	Ars longa, vita brevis. - Уметност је дуга, живот кратак.
+•	Ars poetica. - Песничка уметност.
+•	Artem non odit nisi ignarus. - Само незналица мрзи уметност (натпис на музеју у Берлину).
+•	Asinus asinum fricat. - Магарац магарца чеше.
+•	Audaces fortuna iuvat. - Срећа помаже храбрима.
+•	Audiatur et altera pars. - Нека се чује и друга страна.
+•	Audi, vide, tace, si vis vivere in pace. - Слушај, гледај, ћути, ако желиш живети у миру.
+•	Aurora Musis amica est. - Зора је музама пријатељица.
+•	Aut-aut. - Или-или (тј. избор између две могућности).
+•	Ave, Caesar, morituri te salutant! - Здраво, царе! Поздрављају те они који ће умрети.
+•	Bellum omnium in omnes. - Рат свију против свих.
+•	Bene vixit qui bene latuit. - Добро је проживео ко се добро прикрио.
+•	Bibere humanum est, ergo bibamus. - Пити је људски, зато пијмо.
+•	Bona fide. - У доброј намери.
+•	Bovi imponere clitellas. - Стављати волу самар.
+•	Calamitas nulla sola. - Ниједна несрећа не долази сама.
+•	Carpe diem. - Зграби (искористи) дан.
+•	Casus belli. - Повод за рат (тј. догађај којим се оправдава рат).
+•	Cave ab homine unius libri. - Чувај се човека који је прочитао само једну књигу.
+•	Certo certius. - Сигурније од сигурнога.
+•	Ceterum censeo Carthaginem esse delendam. - Уосталом мислим да Картагину треба разорити. (Катон Старији у римском сенату)
+•	Circulus vitiosus. - Зачаран круг.
+•	Citius, altius, fortius! - Брже, више, јаче!
+•	Clara pacta boni amici. - Чист рачун дуга љубав.
+•	Claude os, aperi oculos! - Затвори уста, отвори очи!
+•	Clavus clavo eicitur. - Клин се клином избија. (Цицерон)
+•	Cogito, ergo sum. - Мислим, дакле постојим. (Рене Декарт)
+•	Conditio sine qua non. - Услов без којег не бива.
+•	Cornix cornici oculos non effodiet. - Врана врани неће вадити очи.
+•	Cornu copiae. - Рог изобиља.
+•	Credo quia absurdum est. - Верујем јер је бесмислено. (Тертулијан)
+•	Credo ut intelligam! - Верујем да бих схватио. (Августин)
+•	Cui bono? - У чију корист?
+•	Cuiusvis hominis est errare. - Сваки човек може да погреши.
+•	Cum grano salis. - Са зрном соли (тј. не сасвим озбиљно).
+•	Cygni cantus. - Лабудова песма (тј. последње дело неког уметника).
+•	De gustibus non est disputandum. - О укусима не вреди расправљати.
+•	De mortuis nihil nisi bene. - О мртвима све најбоље.
+•	Deus ex machina. - Божанство са справе (тј. неочекивано решење).
+•	Dictum factum. - Речено учињено.
+•	Diem perdidi. - Изгубио сам дан.
+•	Dies diem docet. - Дан је дану поука.
+•	Divide et impera. - Завади па владај.
+•	Divitiarum et formae gloria fluxa est. - Крхка је слава богатства и злата. (Салустије)
+•	Dixi et salvavi animam meam. - Рекох и спасох своју душу.
+•	Domine, domine dominae sunt. - Господине, да ли су госпође код куће? (игра речи)
+•	Dormit aliquando ius, moritur nunquam. - Правда понекад спава, али никад не умире.
+•	Dulce cum utili. - Угодно са корисним.
+•	Dulce enim etiam nomen est pacis. - Слатко је већ и име мир. (Цицерон)
+•	Dum spiro spero. - Док дишем (живим), надам се.
+•	Dura lex sed lex. - Строг је закон, али је закон.
+•	Eppur si muove. - Ипак се окреће. (Галилео Галилеј)
+•	Equi donati dentes non inspiciuntur. - Поклону се у зубе не гледа.
+•	Errare humanum est. - Људски је грешити.
+•	Estote sapientes sicut serpentes et taciti sicut columbae. - Будите мудри као змије и безазлени као голубови. (Исус Христос)
+•	Exceptio firmat regulam. - Изузетак потврђује правило.
+•	Ex nihilo nihil fit. - Из ничега ништа не настаје.
+•	Ex tempore. - Одмах, сместа.
+•	Ex malis eligere minimum - Од зала бирати најмање.
+•	Experientia docet. - Искуство поучава. (Вергилије)
+•	Faber est suae quisque fortunae. - Свако је ковач своје среће.
+•	Facta, facta, non verba! - Дела, дела, не речи!
+•	Fama volat! - Глас лети! (дословно зн.) Вест се брзо шири.
+•	Fas est et ab hoste doceri. - И од непријатеља треба учити.
+•	Festina lente! - Пожури полако!
+•	Fide, sed cui, vide! - Веруј, само пази коме верујеш.
+•	Finis coronat opus. - Конац дело краси.
+•	Finis santificat media. - Циљ оправдава средство.
+•	Fortasse erit, fortasse non erit. - Можда ће бити, можда неће бити
+•	Gloria in excelsis Deo et in terra pax hominibus bonae voluntatis. - Слава Богу на висини и на Земљи мир и међу људима добра воља.
+•	Gratia gratiam parit! - Љубав рађа љубав!
+•	Hannibal ante portas. - Ханибал је пред вратима (дословно зн.). Наступила је опасност.
+•	Historia magistra vitae est. - Историја је учитељица живота.
+•	Hoc loco. - На овом месту (овде).
+•	Hodie mihi, cras tibi. - Данас мени, сутра теби.
+•	Homo sui iuris. - Самосталан, независан човек
+•	Homo sum: humani nihil a me alineum puto. - Човјек сам: ништа људско није ми страно.
+•	Homo homini lupus est. - Човек је човеку вук.
+•	Homo novus. - Скоројевић.
+•	Honores mutant mores. - Почасти мењају понашање (навике).
+•	Id est. - То јест.
+•	Ignoramus et ignorabimus. - Не знамо, а нећемо никада ни знати.
+•	Ignorantia legis non excusat. - Непознавање закона није изговор.
+•	Ignorantia nocet. - Незнање шкоди.
+•	Imago animi sermo est. - Говор је слика душе. (Цицерон)
+•	Incidit in Scyllam, qui vult vitare Charybdim. - Упада у Сцилу ко хоће да избегне Харибду.
+•	In dubio pro reo. - У сумњи треба судити блаже.
+•	In medias res. - У средину ствари (тј. прећи на суштину).
+•	In rebus adversis meliora sperare memento. - У невољи не заборави да ће доћи боља времена. (После кише сунце сија.)
+•	In spe. - У нади.
+•	In vino veritas. - У вину је истина.
+•	Inter arma musae tacent. (Inter arma silent musae.) - Међу оружјем музе ћуте (тј. нема уметности за време рата).
+•	Inter nos. - Међу нама.
+•	Intus, intus est Troianus equus. - Унутра, унутра је тројански коњ (тј. опасност је близу).
+•	Iuris praecepta sunt haec: honeste vivere, alterum non laedere, suum cuique tribuere. - Прописи права су: поштено живети, другог не вређати, сваком своје дати.
+•	Ius est ars boni et aequi. - Право је уметност доброг и правичног.
+•	Ius obruitur vi. - Сила сахрањује право.
+•	Iustitia omni auro carior. - Правичност је од свег злата скупоценија. (Цицерон)
+•	Iustitia regnorum fundamentum. - Правичност је (треба да буде) основ владавине.
+•	Lapsus calami. - Омашка у писању.
+•	Lapsus linguae. - Омашка у говору.
+•	Lapsus memoriae. - Омашка у памћењу.
+•	Labor omnia facit. - Рад чини све.
+•	Labor omnia vincit. - Рад све побеђује (у раду је спас).
+•	Legalitas regnorum fundamentum. - Законитост је темељ држава.
+•	Leve fit quod bene fertur onus. - Терет постаје лакши кад се спретно носи.
+•	Libertati viam facere. - Отварати пут слободи.
+•	Licentia poetica. - Песничка слобода.
+•	Lupus in fabula. - Вук у причи (дословно зн.). Ми о вуку, а вук на врата.
+•	Magni nominis umbra. - Сенка значајног човека. (Лукан)
+•	Mala herba cito crescit. - Коров брзо расте.
+•	Malum discordiae. - Јабука раздора.
+•	Manifestum non eget probatione. - Очигледну ствар не треба доказивати.
+•	Manu propria. - Својеручно.
+•	Manus manum lavat. - Рука руку мије.
+•	Margaritas ante porcos. - (Бацати) бисере пред свиње.
+•	Mater semper certa est. - Мајка је увек извесна.
+•	Mea culpa. - Моја кривица.
+•	Mea parvitas. - Моја маленкост.
+•	Medio tutisimus ibis. - Средином је најбоље ићи. (Овидије)
+•	Medium tenuere beati. - Средине се држе блажени.
+•	Melius non incipient, quam desinunt. - Боље не почињати, него стати на пола.
+•	Memento mori. - Сети се да си смртан.
+•	Mens sana in corpore sano. - У здравом телу здрав дух.
+•	Modus vivendi. - Начин живота.
+•	Mutum est pictura poema. - Слика је нема песма.
+•	Natura in minimis maxima. - Природа је у најмањем највећа.
+•	Natura non facit saltus. - Природа не чини скокове.
+•	Nec Hercules contra duos. - Ни Херакле (не може) против двојице.
+•	Nemo dat quod non habet. - Што немаш не можеш дати.
+•	Nihil humani a me alienum puto. - Ништа што је људско није ми страно.
+•	Nolens volens. - Хтео не хтео.
+•	Noli turbare circulos meos. - Не дирај моје кругове (дословно зн.). Не узнемиравај ме, не досађуј ми. (Архимед)
+•	Nolite iacere margaritas ante porcos. - Не бацајте бисере пред свиње. (из Јеванђеља по Матеју)
+•	Nomina sunt odiosa. - Имена су мрска (дословно зн.). Имена (не треба) помињати.
+•	Non omnia possumus omnes. - Не можемо сви све.
+•	Non uno iuctu arbor cadit. - Од једног удара дрво не пада.
+•	Non progredi est regredi. - Не напредовати значи назадовати.
+•	Non quis, sed quid. - Не ко, већ шта.
+•	Non scholae, sed vitae discimus. - Не за школу, већ за живот учимо.
+•	Non ut eadem vivo, sed ut vivam edo. - Не живим да бих јео, него једем да бих живео.
+•	Nosce te ipsum. - Упознај себе самог. (латински превод Сократове мисли)
+•	Nota bene. - Упамти добро.
+•	Nulla regula sine exceptione. - Ниједно правило није без изузетка.
+•	Nullum crimen, nulla poena sine lege. - Нема злочина и нема казне ако то није прописано законом.
+•	Nullus effectus sine causa. - Нема последице без узрока.
+•	Nunc aut nunquam. - Сад или никад.
+•	O tempora, o mores! - Чудних ли времена, чудних ли обичаја! (Цицерон)
+•	Obscurum per obscurius. - Нејасно нејасним.
+•	Occasio facit furem. - Прилика чини лопова.
+•	Oculum pro oculo, dentem pro dente. - Око за око, зуб за зуб.
+•	Omne ingnotum pro magnifico. - Све непознато сматра се величанственим.
+•	Omne nimium nocet. - Све што је превише, шкоди.
+•	Omne principium difficile est. - Сваки почетак је тежак.
+•	Omnia mea mecum porto. - Све своје са собом носим.
+•	Omnium rerum mensura homo. - Човек је мера свих ствари.
+•	Orate ne intretis in tentationem. - Молите се да не дођете у искушење. (Исус Христос)
+•	Periculum in mera. - Опасност је у одлагању.
+•	Per aspera ad astra. - Преко трња до звезда.
+•	Persona grata. - Пожељна (драга) особа.
+•	Persona non grata. - Непожељна особа.
+•	Piscem natare doces. - Учиш рибу да плива.
+•	Plus minus. - Више-мање (отприлике).
+•	Post hoc, ergo propter hoc. - После овог, дакле због овог.
+•	Post meridiem. - После подне.
+•	Post scriptum. - После онога што је написано.
+•	Potentes potenter tormenta patientur. - Ко се служи силом, од силе ће и погинути.
+•	Potius sero quam numquam. - Боље икад него никад.
+•	Prima virtus est vitio carere. - Најважнија врлина је бити без мана.
+•	Primum vivere, deinde philosophari. - Прво живети, онда филозофирати.
+•	Primus inter pares. - Први међу једнакима.
+•	Pro bono publico. - За опште добро.
+•	Procul a Iove procul a fulmine. - Далеко од Јупитера, далеко од грома (дословно зн.). Даље од моћних, даље од њиховог беса.
+•	Pulsate et operietur vobis. - Куцајте и отвориће вам се.
+•	Quae nocent, saepe docent. - Што шкоди, често учи.
+•	Quale vinum, tale Latinum. - Какво вино, такав латински.
+•	Qui tacet consentire videtur. - Ко ћути изгледа да се слаже.
+•	Quidquid latine dictum sit, altum videtur. - Шта год се каже на латинском звучи мудро.
+•	Quisque suorum verborum optimus interpres. - Свако је најбољи тумач својих речи.
+•	Quo vadis, Domine? - Куда идеш, Господе? (апостол Петар упутио Христу)
+•	Quot capita, tot sententiae. - Колико глава толико мишљења.
+•	Recta linea brevissima, recta via tutissima. - Права линија је најкраћа, прави пут је најсигурнији.
+•	Reliquiae reliquiarum. - Остатак остатка.
+•	Repetitio mater studiorum est. - Понављање је мајка знања.
+•	Res, non verba. - Дела, не речи.
+•	Res publica. - Општа (јавна) ствар.
+•	Risu inepto res ineptior nulla est. - Нема неукусније ствари од неукусног (неумесног) смеха.
+•	Risum teneatis? - Можете ли да се не насмејете?
+•	Sapienti sat. - Паметноме доста.
+•	Sapiens homo omnia sea secum portat. - Паметан човек све своје са собом носи (дословно зн.). Осим знања, ништа нам није потребно.
+•	Semper dic verum, vacuam duc crimine vitam, fer patienter onus, fac sapienter opus. - Увек говори истину, не чини зло, стрпљиво подноси терет, разумно ради посао.
+•	Senatus populusque Romanus. - Римски сенат и народ.
+•	Si fueris Romae, Romano vivito more, si fueris alibi, vivito sicut ibi. - Ако будеш у Риму, живи на римски начин, ако будеш на другом месту, живи као онде.
+•	Sic itur ad astra. - Дотаћи звезде.
+•	Sic transit gloria mundi. - Тако пролази слава света.
+•	Sine lingua Latina nulla intelligentia. - Без знања латинског језика нема образовања.
+•	Sine lege autem poena conscientia est. - Када нема закона, казна је савест.
+•	Si vis pacem, para bellum. - Ако желиш мир, спремај се за рат.
+•	Sub rosa. - Испод руже (дословно зн.). У тајности, у поверењу.
+•	Sub voce. - Под речју.
+•	Suaviter in modo, fortiter in re! - У начину благо, у суштини непропустљиво!
+•	Sunt facta verbis difficiliora. - Тежа су дела него речи. (Цицерон)
+•	Surdo fabulam naras. - Глувом причаш причу (узалуд му говориш).
+•	Tabula Pythagorica. - Таблица множења.
+•	Tabula rasa. - Избрисана таблица (дословно зн.). Човек се рађа без икаквих урођених сазнања и искустава.
+•	Tantum possumus quantum scimus. - Толико можемо колико знамо.
+•	Tempori parce! - Штеди време!
+•	Teneo te, Africa! - Држим те, Африко! (Светоније приписао Цезару)
+•	Tertium non datur. - Трећега нема.
+•	Testis unus, testis nullus! - Један сведок, никакав сведок!
+•	Timeo Danaos et dona ferentes. - Бојим се Данајаца и када дарове носе.
+•	Timeo hominem unius libri. - Бојим се човјека који је прочитао само једну књигу.
+•	Tu ne cede malis, sed contra audentior ito. - Не устукни пред недаћом, већ јој храбро у сусрет крени - Вергилије
+•	Tu quoque, Brute, mi fili? - Зар и ти, сине Бруте? (Гај Јулије Цезар)
+•	Ubi bene, ibi patria. - Где је добро тамо је домовина.
+•	Una hirundo non facit ver. - Једна ласта не чини пролеће.
+•	Unusquisque suae fortunae faber est. - Свако је ковач своје среће.
+•	Urbs aeterna. - Вечни град (Рим).
+•	Usus est optimus magister. - Искуство је најбољи учитељ. Цицерон
+•	Ut ameris, ama! - Да би био вољен, воли!
+•	Ut sementem feceris, ita metes. - Како будеш посејао, тако ћеш и пожњети.
+•	Vae victis. - Тешко побеђенима.
+•	Veni, vidi, vici. - Дођох, видех, победих. (Гај Јулије Цезар)
+•	Venies sub dentem. - Доћи ћеш под зуб (Допашћеш ми шака).
+•	Verba volant, scripta manent. - Речи лете, оно што је написано остаје.
+•	Veritas vincit. - Истина побеђује.
+•	Vinum et pueri veraces. - Деца и пијанци не лажу.
+•	Virtus, non copia vincit. - Побеђује храброст, а не мноштво.
+•	Vis legis. - Сила закона.
+•	Vis maior. - Виша сила.
+•	Vivere est militare! - Живети значи борити се! (Живот је борба!)
+•	Votum separatum. - Издвојени глас.
+•	Vox populi, vox Dei. - Глас народа је Божји глас
+</p>
+</html>

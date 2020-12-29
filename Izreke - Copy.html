@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title></title>
+
+<meta charset="UTF-8">		<!-- Specifikacija Kodiranja karaktera za Unicode -->
+
+<link rel="stylesheet" type="text/css" href="stil.css">
+
+<script>
+function mOver1(obj) {
+    obj.innerHTML = "„Коцка је бачена“ рекао је 10. јануара 49. п. н. е. римски војсковођа, политичар и писац Гај Јулије Цезар, када је одлучио, упркос забрани сената, а по цијену грађанског рата, да са својим легијама, пређе ријеку Рубикон"
+}
+function mOut1(obj) {
+    obj.innerHTML = "Gaj Julije Cezar: Alea iacta est! - Kocka je bačena!"
+}
+</script>
+
+<style>
+body
+{
+background-color:#d0e4fe;
+}
+h1
+{
+color:orange;
+text-align:center;
+}
+#stil
+{
+font-family:"Times New Roman";
+font-size:50px;
+font-weight: bold;
+color: white;
+}
+</style>
+
+</head>
+
+<body style="background-image:url('pozadina.jpg')">
+
+<ul>
+<li><a class="navigacija" href="Početak.html"> Početak </a> </li>
+<li><a class="navigacija" href="Izreke.html"> Izreke </a> </li>
+<li><a class="navigacija" href="Učionica.html"> Učionica </a> </li>
+<li><a class="navigacija" href="O meni.html"> O meni </a> </li>
+<li><a class="navigacija" href="Kontakt.html"> Kontakt </a> 
+</li>
+</ul>
+
+
+<div id="stil" onmouseover="mOver1(this), style.fontSize='22px' "  onmouseout="mOut1(this), style.fontSize='50px' "> <p align=center> Gaj Julije Cezar: Alea iacta est! - Kocka je bačena! </p></div>
+
+
+
+
+
+</body>
+
+</html>

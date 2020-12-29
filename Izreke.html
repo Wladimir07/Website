@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title></title>
+
+<meta charset="UTF-8">		<!-- Specifikacija Kodiranja karaktera za Unicode -->
+
+<link rel="stylesheet" type="text/css" href="stil.css">
+
+<script>
+function mOver1(obj) {
+    obj.innerHTML = "„Коцка је бачена“ рекао је 10. јануара 49. п. н. е. римски војсковођа, политичар и писац Гај Јулије Цезар, када је одлучио, упркос забрани сената, а по цени грађанског рата, да са својим легијама, пређе реку Рубикон."
+}
+function mOut1(obj) {
+    obj.innerHTML = "Gaj Julije Cezar: Alea iacta est! - Kocka je bačena!"
+}
+function mOver2(obj) {
+    obj.innerHTML = "Ajnštajn nikada nije prihvatio ideju da Univerzumom vlada slučajnost; njegovo gledanje na ovu stvar sažeto je iskazano u znamenitoj rečenici: 'Bog se ne igra kockicama!' "
+}
+function mOut2(obj) {
+    obj.innerHTML = "Albert Ajštajn: 'Bog se ne igra kockicama.' "
+}
+function mOver3(obj) {
+    obj.innerHTML = "Čuvena Hokingova rečenica “Bog ne samo da se igra kockicama, već ih nekad baca tamo gde ne možemo da ih nađemo”, izgovorena je u vreme dok je verovao da crne rupe ne zrače."
+}
+function mOut3(obj) {
+    obj.innerHTML = "Stiven Hoking: 'Bog ne samo da se igra kockicama, već ih nekad baca tamo gde ne možemo da ih nađemo.' "
+}
+</script>
+
+<style>
+body
+{
+background-color:#d0e4fe;
+}
+h1
+{
+color:orange;
+}
+#stil
+{
+font-family:"Times New Roman";
+font-size:50px;
+font-weight: bold;
+color: white;
+text-align:center;
+width:1200px;height:30px;padding:40px;
+}
+</style>
+
+</head>
+
+<body style="background-image:url('pozadina.jpg')">
+
+<ul>
+<li><a class="navigacija" href="index.html"> Početak </a> </li>
+<li><a class="navigacija" href="Izreke.html"> Izreke </a> </li>
+<li><a class="navigacija" href="Učionica.html"> Učionica </a> </li>
+<li><a class="navigacija" href="O meni.html"> O meni </a> </li>
+<li><a class="navigacija" href="Kontakt.html"> Kontakt </a> 
+</li>
+</ul>
+
+
+<div id="stil"  onmouseover="mOver1(this), this.style.fontSize='22px' "  onmouseout="mOut1(this), this.style.fontSize='50px' "> <p align=center> Gaj Julije Cezar: Alea iacta est! - Kocka je bačena! </p> </div>
+
+
+<div id="stil"  onmouseover="mOver2(this), this.style.fontSize='22px' "  onmouseout="mOut2(this), this.style.fontSize='50px' "> <p align=center> Albert Ajštajn: "Bog se ne igra kockicama."  </p> </div>
+
+
+<div id="stil"  onmouseover="mOver3(this), this.style.fontSize='22px' "  onmouseout="mOut3(this), this.style.fontSize='50px' "> <p align=center> Stiven Hoking: "Bog ne samo da se igra kockicama, već ih nekad baca tamo gde ne možemo da ih nađemo." </p> </div>
+
+
+
+</body>
+
+</html>
